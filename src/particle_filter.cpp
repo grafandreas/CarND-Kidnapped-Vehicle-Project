@@ -198,8 +198,8 @@ void ParticleFilter::resample() {
     default_random_engine gen;
     vector<Particle> new_particles;
 
-    uniform_int_distribution<int> uniintdist(0, particles.size()-1);
-    auto index = uniintdist(gen);
+    uniform_int_distribution<int> unidist(0, particles.size()-1);
+    auto index = unidist(gen);
 
 
 //    for(auto const & p : particles) {
